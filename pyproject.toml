@@ -1,0 +1,32 @@
+[project]
+name = "cortex"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "'adit98shah'", email = "'adit98shah@gmail.com'" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "faiss-cpu>=1.14.3",
+    "langchain>=1.3.13",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.4.9",
+    "langchain-openai>=1.3.5",
+    "langgraph>=1.2.9",
+    "openai>=2.45.0",
+    "pydantic>=2.13.4",
+    "pypdf>=6.14.2",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "streamlit>=1.59.1",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+cortex = "cortex:main"
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
